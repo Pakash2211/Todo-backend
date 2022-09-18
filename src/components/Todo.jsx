@@ -23,7 +23,7 @@ import {v4 as uuid} from 'uuid';
 
     return(
       <>
-        <div>
+        <div className='todointput'> 
         <input type="text" placeholder="Add Task....." onChange={handleChange}  value = {title}/>
         <button onClick={handleClick}>Add</button>
         </div>

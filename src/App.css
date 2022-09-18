@@ -1,38 +1,86 @@
 .App {
   text-align: center;
+ 
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todotitle{
+  background-color: rgb(255, 0, 64);
+  color:aliceblue;
+  margin-top: 0px;
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todotitle:hover{
+   background-color: aliceblue;
+   color:rgb(255, 0, 64);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todointput{
+  border:1px solid rgb(255, 0, 64);
+  padding: 20px 10px;
+  width:30%;
+  margin: auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.todointput > input{
+  border:1px solid rgb(255, 0, 64);
+  padding: 10px 20px;
+  width:30%;
+  border-radius: 25px;
+}
+.todointput > button{
+  background-color: rgb(255, 0, 64);
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  margin-left: 12px;
+  cursor: pointer;
+  color:aliceblue;
+}
+.todointput > button:hover{
+  border: 2px solid black;
+  cursor:pointer;
+}
+
+.todoinv{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+ align-items: center;
+ justify-content: space-evenly;
+ margin-bottom: 5px;
+}
+.todoinv :hover{
+  background-color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+.todolist{
+  width : 30%;
+  margin: auto;
+  margin-top: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.del{
+  color:rgb(0, 0, 0);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.del:hover{
+  cursor: pointer;
+  color:rgb(255, 0, 0);
+}
+.cancel{
+  cursor: pointer;
+  color:rgb(255, 0, 0);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.right{
+  cursor: pointer;
+  color:green;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }

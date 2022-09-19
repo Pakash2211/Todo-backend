@@ -1,4 +1,5 @@
 <h1>Todo with Server</h1>
+<h2>A Solo project built by me within 1 day.</h2>
 
 ## Tech Stack
 

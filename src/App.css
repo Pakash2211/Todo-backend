@@ -22,13 +22,25 @@
   width:30%;
   margin: auto;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .todointput > input{
-  border:1px solid rgb(255, 0, 64);
+  border:none;
   padding: 10px 20px;
-  width:30%;
-  border-radius: 25px;
+  width:50%;
+  /* border-radius: 25px; */
+  outline: none;
+  color:red;
+  border-bottom: 1px solid rgb(255, 0, 64);
 }
+
+.todointput ::placeholder{
+  color:rgb(224, 149, 168);
+}
+
 .todointput > button{
   background-color: rgb(255, 0, 64);
   border: 2px solid white;
@@ -49,16 +61,22 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
  align-items: center;
  justify-content: space-evenly;
- margin-bottom: 5px;
+ margin-bottom: 10px;
+ word-wrap: break-word;
 }
 .todoinv :hover{
   background-color: aliceblue;
-}
+  cursor: pointer;
 
+}
+.todoinv > h2{
+  word-wrap: break-word;
+  width: 70%;
+}
 .todolist{
   width : 30%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .del{
   color:rgb(0, 0, 0);
@@ -84,3 +102,26 @@
   height: 25px;
   cursor: pointer;
 }
+.addicon{
+  cursor: pointer;
+  color:rgb(255, 102, 140);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+.addicon :hover{
+  color:rgb(255, 0, 64);
+}
+
+@media only screen and (max-width: 600px){
+.todointput,.todolist {
+  width:90%;
+}
+}
+
+@media only screen and (max-width: 768px){
+  .todointput,.todolist {
+    width:60%;
+  }
+  }

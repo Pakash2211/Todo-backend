@@ -3,6 +3,7 @@ import { Todolist } from './Todolist';
 import { addData } from '../redux/action';
 import { useDispatch } from 'react-redux';
 import {v4 as uuid} from 'uuid';
+import{MdAddTask} from 'react-icons/md'
  
  export const Todo = () =>{
     const dispatch = useDispatch();
@@ -25,7 +26,7 @@ import {v4 as uuid} from 'uuid';
       <>
         <div className='todointput'> 
         <input type="text" placeholder="Add Task....." onChange={handleChange}  value = {title}/>
-        <button onClick={handleClick}>Add</button>
+        <MdAddTask onClick={handleClick}  className='addicon'/>
         </div>
         <Todolist/>
         </>

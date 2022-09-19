@@ -12,9 +12,11 @@
 
 - Add Task
 - Delete Task
-- Edit(complete/ not-complete)
+- Edit(complete/incomplete)
 
+## Screenshot
 
+<img src="https://user-images.githubusercontent.com/107308031/190953004-b4dedd18-cf95-4966-bb09-323a05c8a1ee.png"  alt="home" />
 
 
 ### `npm start`

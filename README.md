@@ -1,5 +1,22 @@
 <h1>Todo with Server</h1>
 
+## Tech Stack
+
+- React.js
+- CSS 3
+- Redux
+- Node.js
+- Express
+
+## Features
+
+- Add Task
+- Delete Task
+- Edit(complete/ not-complete)
+
+
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
